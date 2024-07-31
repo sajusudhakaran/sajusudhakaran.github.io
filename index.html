@@ -4,248 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dharmashree Offset and Screens - Premium Printing Services</title>
-    <style>
-        :root {
-            --primary-color: #ff6b6b;
-            --secondary-color: #4ecdc4;
-            --accent-color: #feca57;
-            --text-color: #333;
-            --light-bg: #f7f7f7;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: var(--text-color);
-            background-color: var(--light-bg);
-        }
-
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-
-        nav {
-            background-color: var(--secondary-color);
-            padding: 1rem;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .hero {
-            background-color: var(--accent-color);
-            color: white;
-            text-align: center;
-            padding: 3rem;
-            margin-bottom: 2rem;
-            background-image: url('https://via.placeholder.com/1200x400?text=Printing+Services');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .service-card {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            width: calc(33% - 1rem);
-            transition: transform 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .service-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background-color: #ff8787;
-        }
-
-        footer {
-            background-color: var(--secondary-color);
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .gallery img {
-            width: calc(25% - 1rem);
-            height: 200px;
-            object-fit: cover;
-            margin-bottom: 1rem;
-            border-radius: 8px;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Dharmashree Offset and Screens</h1>
-        <p>Your Premier Printing Partner in Bangalore</p>
+        <nav>
+            <div class="logo">
+                <img src="https://via.placeholder.com/150x50?text=Dharmashree+Logo" alt="Dharmashree Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
     <main>
         <section id="home" class="hero">
-            <h2>Transform Your Ideas into Print</h2>
-            <p>High-quality printing services for all your business needs</p>
-            <a href="#contact" class="cta-button">Get a Quote</a>
+            <div class="hero-content">
+                <h1 data-aos="fade-up">Transform Your Ideas into Reality</h1>
+                <p data-aos="fade-up" data-aos-delay="200">Premium Printing Services in Bangalore</p>
+                <a href="#contact" class="cta-button" data-aos="fade-up" data-aos-delay="400">Get a Quote</a>
+            </div>
+            <video autoplay muted loop id="hero-video">
+                <source src="https://example.com/path-to-your-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </section>
 
         <section id="services">
-            <h2>Our Services</h2>
-            <div class="services">
-                <div class="service-card">
-                    <img src="https://via.placeholder.com/400x200?text=Business+Cards" alt="Business Cards">
+            <h2 data-aos="fade-up">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <i class="fas fa-id-card"></i>
                     <h3>Business Essentials</h3>
-                    <ul>
-                        <li>Visiting Cards</li>
-                        <li>Letterheads</li>
-                        <li>Bill Books</li>
-                    </ul>
+                    <p>Premium business cards, letterheads, and corporate stationery.</p>
                 </div>
-                <div class="service-card">
-                    <img src="https://via.placeholder.com/400x200?text=Brochures" alt="Brochures">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-ad"></i>
                     <h3>Marketing Materials</h3>
-                    <ul>
-                        <li>Brochures</li>
-                        <li>Pamphlets</li>
-                        <li>Standee Boards</li>
-                    </ul>
+                    <p>Eye-catching brochures, flyers, and promotional items.</p>
                 </div>
-                <div class="service-card">
-                    <img src="https://via.placeholder.com/400x200?text=Custom+Printing" alt="Custom Printing">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-tshirt"></i>
                     <h3>Custom Printing</h3>
-                    <ul>
-                        <li>T-shirt Printing</li>
-                        <li>Mug Printing</li>
-                        <li>ID Cards</li>
-                    </ul>
+                    <p>Personalized t-shirts, mugs, and promotional products.</p>
                 </div>
-                <div class="service-card">
-                    <img src="https://via.placeholder.com/400x200?text=Promotional+Items" alt="Promotional Items">
-                    <h3>Promotional Items</h3>
-                    <ul>
-                        <li>Custom Lanyards</li>
-                        <li>Branded Umbrellas</li>
-                        <li>Paper and Cotton Bags</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <img src="https://via.placeholder.com/400x200?text=Large+Format+Printing" alt="Large Format Printing">
+                <div class="service-card" data-aos="fade-up">
+                    <i class="fas fa-sign"></i>
                     <h3>Large Format</h3>
-                    <ul>
-                        <li>Banners</li>
-                        <li>Posters</li>
-                        <li>Signage</li>
-                    </ul>
+                    <p>Banners, posters, and signage for maximum impact.</p>
                 </div>
-                <div class="service-card">
-                    <img src="https://via.placeholder.com/400x200?text=Office+Supplies" alt="Office Supplies">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-stamp"></i>
                     <h3>Office Supplies</h3>
-                    <ul>
-                        <li>Self-ink Stamps</li>
-                        <li>Polymer Stamps</li>
-                        <li>Custom Stickers</li>
-                    </ul>
+                    <p>Custom stamps, stickers, and essential office items.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-box-open"></i>
+                    <h3>Packaging Solutions</h3>
+                    <p>Custom packaging and labels for your products.</p>
                 </div>
             </div>
         </section>
 
-        <section id="gallery">
-            <h2>Our Work</h2>
-            <div class="gallery">
-                <img src="https://via.placeholder.com/400x200?text=Project+1" alt="Project 1">
-                <img src="https://via.placeholder.com/400x200?text=Project+2" alt="Project 2">
-                <img src="https://via.placeholder.com/400x200?text=Project+3" alt="Project 3">
-                <img src="https://via.placeholder.com/400x200?text=Project+4" alt="Project 4">
+        <section id="portfolio">
+            <h2 data-aos="fade-up">Our Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-aos="zoom-in">
+                    <img src="https://via.placeholder.com/400x300?text=Project+1" alt="Project 1">
+                    <div class="portfolio-overlay">
+                        <h3>Corporate Branding</h3>
+                        <p>Complete branding package for XYZ Corp</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://via.placeholder.com/400x300?text=Project+2" alt="Project 2">
+                    <div class="portfolio-overlay">
+                        <h3>Event Materials</h3>
+                        <p>Promotional items for Annual Tech Conference</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://via.placeholder.com/400x300?text=Project+3" alt="Project 3">
+                    <div class="portfolio-overlay">
+                        <h3>Product Packaging</h3>
+                        <p>Custom packaging design for ABC Foods</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="about">
-            <h2>About Us</h2>
-            <p>Dharmashree Offset and Screens has been serving Bangalore's printing needs since [year]. Our commitment to quality and customer satisfaction has made us a trusted name in the industry.</p>
+            <div class="about-content" data-aos="fade-right">
+                <h2>About Dharmashree</h2>
+                <p>Since [year], Dharmashree Offset and Screens has been at the forefront of the printing industry in Bangalore. Our state-of-the-art technology and expert team ensure top-quality results for all your printing needs.</p>
+                <a href="#contact" class="cta-button">Learn More</a>
+            </div>
+            <div class="about-image" data-aos="fade-left">
+                <img src="https://via.placeholder.com/600x400?text=Our+Facility" alt="Dharmashree Facility">
+            </div>
         </section>
 
         <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Ready to start your project? Get in touch with us today!</p>
-            <ul>
-                <li>Phone: <a href="tel:+919880473674">+91 98804 73674</a></li>
-                <li>Email: <a href="mailto:dharmashri123@gmail.com">dharmashri123@gmail.com</a></li>
-                <li>Address: Kanakapura Road konanakunte cross, bengaluru-560 062</li>
-            </ul>
-            <a href="https://wa.me/919880473674" class="cta-button">Contact on WhatsApp</a>
+            <h2 data-aos="fade-up">Get In Touch</h2>
+            <div class="contact-container">
+                <form class="contact-form" data-aos="fade-right">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+                <div class="contact-info" data-aos="fade-left">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Kanakapura Road konanakunte cross, bengaluru-560 062</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 98804 73674</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>dharmashri123@gmail.com</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Dharmashree Offset and Screens. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dharmashree Offset and Screens. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
