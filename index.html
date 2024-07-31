@@ -63,6 +63,9 @@
             text-align: center;
             padding: 3rem;
             margin-bottom: 2rem;
+            background-image: url('https://via.placeholder.com/1200x400?text=Printing+Services');
+            background-size: cover;
+            background-position: center;
         }
 
         .services {
@@ -83,6 +86,14 @@
 
         .service-card:hover {
             transform: translateY(-5px);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
         }
 
         .cta-button {
@@ -107,6 +118,20 @@
             padding: 1rem;
             margin-top: 2rem;
         }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .gallery img {
+            width: calc(25% - 1rem);
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
@@ -119,6 +144,7 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -135,6 +161,7 @@
             <h2>Our Services</h2>
             <div class="services">
                 <div class="service-card">
+                    <img src="https://via.placeholder.com/400x200?text=Business+Cards" alt="Business Cards">
                     <h3>Business Essentials</h3>
                     <ul>
                         <li>Visiting Cards</li>
@@ -143,6 +170,7 @@
                     </ul>
                 </div>
                 <div class="service-card">
+                    <img src="https://via.placeholder.com/400x200?text=Brochures" alt="Brochures">
                     <h3>Marketing Materials</h3>
                     <ul>
                         <li>Brochures</li>
@@ -151,6 +179,7 @@
                     </ul>
                 </div>
                 <div class="service-card">
+                    <img src="https://via.placeholder.com/400x200?text=Custom+Printing" alt="Custom Printing">
                     <h3>Custom Printing</h3>
                     <ul>
                         <li>T-shirt Printing</li>
@@ -159,6 +188,7 @@
                     </ul>
                 </div>
                 <div class="service-card">
+                    <img src="https://via.placeholder.com/400x200?text=Promotional+Items" alt="Promotional Items">
                     <h3>Promotional Items</h3>
                     <ul>
                         <li>Custom Lanyards</li>
@@ -167,6 +197,7 @@
                     </ul>
                 </div>
                 <div class="service-card">
+                    <img src="https://via.placeholder.com/400x200?text=Large+Format+Printing" alt="Large Format Printing">
                     <h3>Large Format</h3>
                     <ul>
                         <li>Banners</li>
@@ -175,6 +206,7 @@
                     </ul>
                 </div>
                 <div class="service-card">
+                    <img src="https://via.placeholder.com/400x200?text=Office+Supplies" alt="Office Supplies">
                     <h3>Office Supplies</h3>
                     <ul>
                         <li>Self-ink Stamps</li>
@@ -182,6 +214,16 @@
                         <li>Custom Stickers</li>
                     </ul>
                 </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Our Work</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/400x200?text=Project+1" alt="Project 1">
+                <img src="https://via.placeholder.com/400x200?text=Project+2" alt="Project 2">
+                <img src="https://via.placeholder.com/400x200?text=Project+3" alt="Project 3">
+                <img src="https://via.placeholder.com/400x200?text=Project+4" alt="Project 4">
             </div>
         </section>
 
